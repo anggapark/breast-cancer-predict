@@ -1,0 +1,8 @@
+numpy==1.24.3
+opencv-python==4.8.0.76
+pandas==2.0.3
+pillow==9.5.0
+scikit-learn==1.3.0
+seaborn==0.12.2
+streamlit==1.25.0
+tensorflow==2.13.0
