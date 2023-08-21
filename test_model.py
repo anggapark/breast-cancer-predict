@@ -12,6 +12,7 @@ import unittest
 import numpy as np
 import tensorflow as tf
 from cnn_model import create_model
+from transfer_learning_model import build_model
 
 BATCH_SIZE = 32
 HEIGHT = 224
@@ -21,7 +22,8 @@ CHANNELS = 3
 
 class TestCNNModel(unittest.TestCase):
     def setUp(self):
-        self.model = create_model()
+        # self.model = create_model()
+        self.model = build_model()
 
     def tearDown(self) -> None:
         del self.model
