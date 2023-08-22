@@ -24,20 +24,20 @@ The BreakHis dataset consists of 9,109 microscopic images of breast cancer colle
 
 1. Load images
 
-Dataset can be accesses through fold.csv dataframe that contains images information that consist of magnitude, group (train, test), and path, with total of 7909 images of benign and malignant breast cancer.
+   Dataset can be accesses through fold.csv dataframe that contains images information that consist of magnitude, group (train, test), and path, with total of 7909 images of benign and malignant breast cancer.
 
 2. Data Splitting
 
-Through fold.csv dataframe, the data is divided into three parts. First, data is divided to training set by 5506 and test set by 2403 based on 'grp' value. Then training set is divided randomly to train set by 4404 and validation set by 1102.
+   Through fold.csv dataframe, the data is divided into three parts. First, data is divided to training set by 5506 and test set by 2403 based on 'grp' value. Then training set is divided randomly to train set by 4404 and validation set by 1102.
 
 3. Data Augmentation
 
-Applies a set of image augmentation transformations using the Albumentations library. These transformations include:
+   Applies a set of image augmentation transformations using the Albumentations library. These transformations include:
 
-- Rotation,
-- Horizontal and vertical flips,
-- Random brightness and contrast adjustments, and
-- Blurring
+   - Rotation,
+   - Horizontal and vertical flips,
+   - Random brightness and contrast adjustments, and
+   - Blurring
 
 # Transfer Learning
 
