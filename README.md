@@ -58,12 +58,16 @@ model = tf.keras.models.Model(pretrained_model.input, outputs)
 
   ![alt text](https://github.com/anggapark/breast-cancer-predict/blob/main/asset/transfer_lr_model_result.png?raw=true)
 
-- Confusion Matrix and ROC (Receiver Operating Characteristic ) Curve for test set.
+- Confusion Matrix and ROC (Receiver Operating Characteristic ) Curve from inference result.
 
   ![alt text](https://github.com/anggapark/breast-cancer-predict/blob/main/asset/cm_roc_curve.png?raw=true)
 
 # Deployment
 
-Breast Cancer Classifier Deployment using Streamlit:
+- Breast Cancer Classifier Deployment using Streamlit:
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://breast-cancer-predict-deploy.streamlit.app)
+  [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://breast-cancer-predict-deploy.streamlit.app)
+
+- Mobile App Breast Cancer Image Prediction
+
+  https://github.com/anggapark/breast-cancer-predict/tree/mobile_app
