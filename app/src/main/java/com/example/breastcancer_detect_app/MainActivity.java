@@ -98,14 +98,18 @@ public class MainActivity extends AppCompatActivity {
 
             // find the index of the class with the biggest confidence.
             float[] confidences = outputFeature0.getFloatArray();
-            float threshold = 0.5f; // Adjust the threshold as needed
+            float threshold = 0.5f;
 
-            for (int i = 0; i < confidences.length; i++) {
-//                System.out.println(confidences[i]);
-                result.setText(confidences[i]);
+            String[] classes = {"benign", "malignant"};
+            String resultText;
+
+            if (confidences[0] > threshold) {
+                resultText = classes[1]; // "malignant"
+            } else {
+                resultText = classes[0]; // "benign"
             }
 
-
+            result.setText(resultText);
 //            float[] confidences = outputFeature0.getFloatArray();
 //            int maxPos = 0;
 //            float maxConfidence = 0;
